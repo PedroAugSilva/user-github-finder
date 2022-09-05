@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(218, 238, 255);
+}
+main {
+  position: relative;
+  transition: .2s ease-in-out;
+}
+.btnSearch {
+  border: none;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 17pt;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btnSearch:hover {
+  font-size: 19pt;
+}
+.searchArea {
+  width: 350px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #fff;
+  transition: .2s ease-in-out;
+}
+.searchInput {
+  border: 0;
+  outline: 0;
+  width: 250px;
+  height: 100%;
+  font-size: 16pt;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+h3 {
+  position: absolute;
+  top: 10px;
+  text-align: center;
+}
+.container {
+  width: 690px;
+  height: 300px;
+  background-color: aliceblue;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding: 1rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  border-radius: 10px;
+  margin-top: 2.6rem;
+  scroll-behavior: smooth;
+  box-shadow: 7px 7px 0px rgb(155, 161, 245);
+}
+
+.container::-webkit-scrollbar {
+  background: none;
+}
+.projectsRepos {
+  width: 210px;
+  height: 100%;
+  background-color: rgb(177, 183, 255);
+  box-shadow: 10px 0px 0px -5px rgb(197, 224, 247);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  flex: none;
+  overflow: hidden;
+  position: relative;
+  margin-right: 1rem;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+  color: rgb(38, 0, 73);
+}
+.projectsRepos:last-child {
+  margin-right: 0rem;
+}
+.btnHandle {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  top: 370px;
+  cursor: pointer;
+  background-color: rgb(155, 161, 245);
+  box-shadow: 0 0 5px 2px rgb(177, 183, 255);
+  transition: 0.2s ease-in-out;
+}
+.btnHandle:hover {
+  transform: scale(1.1);
+}
+.right {
+  right: -30px;
+}
+.left {
+  left: -30px;
+  z-index: 2;
+}
+.icon-next {
+  text-align: center;
+  font-size: 20pt;
+}
+.profileInfo {
+  width: 690px;
+  height: 70px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 7px 7px 0 rgb(155, 161, 245);
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+.profileName {
+  width: 40%;
+  height: 90%;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  border-right: 2px solid #808080;
+}
+.figure {
+  width: 65px;
+  height: 65px;
+}
+.figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.profileFollowes {
+  width: 60%;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.profileFollowes span {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+.followers {
+  margin-right: 5px;
+}
+.followerArea {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+.icon-user {
+  margin-right: 5px;
+  font-size: 15pt;
+}
+.error {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(255, 35, 71);
+  box-shadow: 0 0 5px rgb(248, 76, 105);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 1rem;
+}
+.errorMessage {
+  color: #fff;
+}
+.load {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.315);
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+.loadContent {
+  width: 100%;
+  height: 100%;
+  filter: invert(100%);
+  animation: load 1s ease-in-out infinite;
+}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.notRepos {
+  width: 250px;
+  margin-left: 220px;
+}
+.btnRepos a {
+  text-decoration: none;
+  color: #000;
+}
+.computer-title {
+  font-size: 13.5rem;
+  position: absolute;
+  right: -50px;
+  filter: blur(7px);
+}
+.desc-area {
+  width: 100%;
+  height: 155px;
+  z-index: 0;
+  border-radius: 10px;
+  background-color: aliceblue;
+  padding: .3rem;
+  overflow: auto;
+}
+
+.desc-area::-webkit-scrollbar{
+  width: 7px;
+}
+.desc-area::-webkit-scrollbar-thumb{
+  background-color: #80808070;
+  border-radius: 5px;
+}
+.projectsRepos h4{
+  font-size: 18pt;
+  text-align: center;
+}
+.descTitle{
+  position: absolute;
+  background-color: aliceblue;
+  padding: 2px 4px 10px 4px;
+  border-radius: 10px 10px 0px 0px;
+  left: 5px;
+  top: 85px;
+  font-weight: 600;
+}
+.reposTitle{
+  position: absolute;
+  background-color: aliceblue;
+  padding: 5px 7px 10px ;
+  border-radius: 5px 5px 0px 0px;
+  z-index: -1;
+  top: 220px;
+  left: 0px;
+  box-shadow: 5px 5px 0px rgb(155, 161, 245);
+}
+.reposTitle label{
+  text-align: center;
+  font-weight: 700;
+  font-size: 15pt;
+  
+}
+.desc{
+  border: 2px solid rgb(155, 161, 245);
+  border-radius: 10px;
+  padding: 4px 6px;
+}
+.errorAlign{
+  text-align: center;
+}
+.searchRepos{
+  position: absolute;
+  top: 220px;
+  left: 150px;
+  width: 230px;
+  padding: 0px 5px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 5px 4px 0px -2px rgb(155, 161, 245);
+}
+.searchRepos input{
+  font-size: 12pt;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  height: 27px;
+  background-color: aliceblue;
+}
