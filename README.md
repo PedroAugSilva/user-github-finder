@@ -1,2 +1,2 @@
-# user-github-finder
-This is my first project with ReactJS, and as the name says, it basically searches for information from the github user you are looking for, I used the api that github provides
+<h2 style="text-align: center;">User GitHub Finder</h2>
+<p>fiz esse projeto com o proposito de exercício dos meus estudos de ReactJs</p>
